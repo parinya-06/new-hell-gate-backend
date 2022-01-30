@@ -9,6 +9,7 @@ export class Backend {
         product: ProductInterface,
         resourceAmount: ResourceAmountInterface
     ): LinearProgrammingResponseInterface {
+
         return
     }
 }
