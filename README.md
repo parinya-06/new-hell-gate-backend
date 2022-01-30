@@ -36,7 +36,7 @@
   ```
     - Update Todo (Auth Required)
   ```
-  PATCH /todos/{todoId}
+  PUT /todos/{todoId}
   ```
     - Delete Todo (Auth Required)
   ```
