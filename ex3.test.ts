@@ -2,7 +2,7 @@ import {
     ProductInterface,
     ResourceAmountInterface
 } from "./interfaces/linear-programing.interface";
-import Backend from "./backend";
+import Ex3 from "./ex3";
 import DailyReportInterface from "./interfaces/daily-report.interface";
 
 describe('backend test', () => {
@@ -32,7 +32,7 @@ describe('backend test', () => {
                 useResourceE: 2
             }
         }
-        const actual = Backend.linearProgramming(product, resourceAmount)
+        const actual = Ex3.linearProgramming(product, resourceAmount)
         expect(actual.maximumProfit).toBeGreaterThanOrEqual(500000)
         expect(actual.useResourceA).toBeLessThanOrEqual(250)
         expect(actual.useResourceB).toBeLessThanOrEqual(500)
@@ -67,7 +67,7 @@ describe('group daily report', () => {
                 value: {},
             },
         ]
-        expect(Backend.groupDailyReports(dailyReports)).toMatchObject(dailyReports)
+        expect(Ex3.groupDailyReports(dailyReports)).toMatchObject(dailyReports)
     })
 
     it('group daily report financial', () => {
@@ -118,7 +118,7 @@ describe('group daily report', () => {
             },
         ]
 
-        expect(Backend.groupDailyReports(dailyReports)).toMatchObject(expected)
+        expect(Ex3.groupDailyReports(dailyReports)).toMatchObject(expected)
     })
 
     it('group daily report credit', () => {
@@ -169,7 +169,7 @@ describe('group daily report', () => {
             },
         ]
 
-        expect(Backend.groupDailyReports(dailyReports)).toMatchObject(expected)
+        expect(Ex3.groupDailyReports(dailyReports)).toMatchObject(expected)
     })
 
     it('group each type without bonus type', () => {
@@ -377,7 +377,7 @@ describe('group daily report', () => {
             },
         ]
 
-        expect(Backend.groupDailyReports(dailyReports)).toMatchObject(expected)
+        expect(Ex3.groupDailyReports(dailyReports)).toMatchObject(expected)
     })
 
     it('group bonus type', () => {
@@ -478,6 +478,6 @@ describe('group daily report', () => {
             },
         ]
 
-        expect(Backend.groupDailyReports(dailyReports)).toMatchObject(expected)
+        expect(Ex3.groupDailyReports(dailyReports)).toMatchObject(expected)
     })
 })
