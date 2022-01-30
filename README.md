@@ -53,8 +53,16 @@
   โจทย์ linear programming
 
   ![Screen Shot 2565-01-30 at 17 09 20](https://user-images.githubusercontent.com/72042042/151695406-0550ab5d-2a88-4fb3-82b1-d6d127978de5.png)
-
-
+  
+  
+3.โจทย์ web3.js  https://bombcrypto.io/
+ 
+  ![Screen Shot 2565-01-30 at 23 23 15](https://user-images.githubusercontent.com/72042042/151707956-c6e03683-725c-45a4-a195-f30479037005.png)
+  
+  ```
+  GET /bomb/{address}  ดึงข้อมูลเกม bomb จาก address ให้ได้ข้อมูลาม ui *ตัวอย่าง addressที่มีข้อมูล 0x2E4A26aECf2CAb4F345e949Ab4264883B5a31807
+  ```
+  
 Optional
 - each todo can have an image
 - มีการ validate ชนิดข้อมูลในแต่ละ API
