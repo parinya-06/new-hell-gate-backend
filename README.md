@@ -63,6 +63,28 @@
   GET /bomb/{address}  ดึงข้อมูลเกม bomb จาก address ให้ได้ข้อมูลาม ui *ตัวอย่าง addressที่มีข้อมูล 0x2E4A26aECf2CAb4F345e949Ab4264883B5a31807
   ```
   
+  ```
+  GET /bomb/bhero/{address}  ดึงนวน bhero จาก address *addressที่มีข้อมูล 0x2E4A26aECf2CAb4F345e949Ab4264883B5a31807
+  ```
+  
+  ```
+  GET /bomb/bcoin/{address}  ดึงนวน bcoin จาก address *addressที่มีข้อมูล 0x2E4A26aECf2CAb4F345e949Ab4264883B5a31807
+  ```
+  
+  ```
+  GET /bomb/bcoin/{address}  ดึงนวน bcoin จาก address *addressที่มีข้อมูล 0x2E4A26aECf2CAb4F345e949Ab4264883B5a31807
+  ```
+  
+  ```
+  POST /token/mint  mint เหรียญเข้ากระเป๋าตัวเอง contract https://rinkeby.etherscan.io/address/0xDC74a38D3d703A5010C074770d5cbb853B981c50
+  ```
+  
+  ```
+  GET /token/balance  get balance เหรียญจากกระเป๋าตัวเอง contract https://rinkeby.etherscan.io/address/0xDC74a38D3d703A5010C074770d5cbb853B981c50
+  ```
+  
+  
+  
 Optional
 - each todo can have an image
 - มีการ validate ชนิดข้อมูลในแต่ละ API
