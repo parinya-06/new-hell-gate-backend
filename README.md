@@ -50,7 +50,9 @@
 
 \
 2.สร้างฟังชั่นเพื่อทำให้ test ในแต่ละข้อในไฟล์ backend.spec.ts รันผ่าน
-
+ 
+linear programming  
+![Screen Shot 2565-01-30 at 16 30 16](https://user-images.githubusercontent.com/72042042/151694284-8912d3fe-3815-46a9-a240-c8840ae7adea.png)
 
 
 
