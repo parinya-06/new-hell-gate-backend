@@ -65,5 +65,5 @@ Chain: Rinkeby Testnet
   ```
   
   ```
-  GET /token/balance  get balance เหรียญจากกระเป๋าตัวเอง contract https://rinkeby.etherscan.io/address/0xDC74a38D3d703A5010C074770d5cbb853B981c50
+  GET /token/balance  แสดงจำนวนเหรียญที่มีจากกระเป๋าตัวเอง contract https://rinkeby.etherscan.io/address/0xDC74a38D3d703A5010C074770d5cbb853B981c50
   ```
