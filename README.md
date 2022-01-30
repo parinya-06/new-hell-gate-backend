@@ -1,4 +1,4 @@
-# Ex3 Developer Test
+# Developer Test
 
 **Required Tech Stack**
 
