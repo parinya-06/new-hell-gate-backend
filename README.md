@@ -48,12 +48,13 @@
   เชื่อมต่อกับ Database, รับ/ส่งข้อมูลกับ API ผ่าน TCP Protocol
   ```
 
-2.สร้างฟังชั่นเพื่อทำให้ test ในแต่ละข้อในไฟล์ backend.spec.ts รันผ่าน
+2.สร้างฟังชั่นเพื่อทำให้ test ในแต่ละข้อในไฟล์ backend.spec.ts รันผ่าน (ไม่ให้ใช้ lib)
  
-linear programming
+  2.1 linear programming
 
-![Screen Shot 2565-01-30 at 17 09 20](https://user-images.githubusercontent.com/72042042/151695406-0550ab5d-2a88-4fb3-82b1-d6d127978de5.png)
-
+  ![Screen Shot 2565-01-30 at 17 09 20](https://user-images.githubusercontent.com/72042042/151695406-0550ab5d-2a88-4fb3-82b1-d6d127978de5.png)
+  
+  2.2 group daily report
 
 Optional
 - each todo can have an image
