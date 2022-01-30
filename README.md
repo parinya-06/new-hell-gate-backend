@@ -2,51 +2,35 @@
 
 **Required Tech Stack**
 
-- NestJS (TypeScript) Microservice
+- NestJS Microservice
 - MongoDB
 
 \
-1.ให้ทำการสร้างโปรเจค NestJS ขึ้นมาและทำการเพิ่ม Features เหล่านี้
+1.1 ออกแบบระบบร้านหนังสือ โดยมี service ดังนี้ 
+  - Web API Service (เขื่อมต่อ HTTP Protocol กับ Client)
+  - User Service (เชื่อมต่อ TCP Protocol กับ Web API Service)
+  - Book Service (เชื่อมต่อ AMQP Protocol กับ Web API Service)
+  - User และ Book มี database เป็นของตัวเอง
+    
+1.2 ออกแบบ Features ของ User Service ดังนี้
+  - เพิ่ม / ลบ / แก้ไขข้อมูล User
+  - แสดงรายการ User แบบ pagination ( สามารถ filter ตามชื่อผู้ใช้งาน , ชื่อ - นามสกุล ได้ )
+  - ระบบ Login (เมื่อมีการล็อคอินผิดพลาด 3 ครั้งจะถูกระงับ 10 วินาที)
+  - ระบบรายงานจำนวนสมาชิกใหม่
+  - ระบบรายงานจำนวนสมาชิกที่เข้าใช้ระบบ
+  - ระบบเปลี่ยน Password
 
-
-- User API (HTTP)
-    - Register
-  ```
-  POST /users
-  ```
-    - Sign in (ใส่ข้อมูลผิด 3 ครั้งโดนบล็อค 10 วินาที)
-  ```
-  POST /auth/signin
-  ```
-    - Me (Current User Data) (Auth Required)
-  ```
-  GET /users/me
-  ```
-    - Create Todo (Auth Required)
-  ```
-  POST /todos
-  ```
-    - Get Todo (Auth Required)
-  ```
-  GET /todos?[page=1]&[perPage=5]
-  ```
-    - Find Todo (Auth Required)
-  ```
-  GET /todos/{todoId}
-  ```
-    - Update Todo (Auth Required)
-  ```
-  PUT /todos/{todoId}
-  ```
-    - Delete Todo (Auth Required)
-  ```
-  DELETE /todos/{todoId}
-  ```
-
-- User Service (TCP)
-  ```
-  เชื่อมต่อกับ Database, รับ/ส่งข้อมูลกับ API ผ่าน TCP Protocol
-  ```
+1.3 ออกแบบ Features ของ Book Service ดังนี้
+  - เพิ่ม / ลบ / แก้ไขข้อมูล Book
+  - แสดงหนังสือ ( filter ตามหมวดหมู่ , เรียงลำดับหนังสือที่เหลือมาก - น้อย , ราคาต่ำ - สูง )
+  - ระบบบันทึกการซื้อหนังสือของ user
+  - ระบบรายงานหนังสือที่ถูกขายในแต่ละหมวดหมู่ , จัดอันดับหนังสือที่ถูกขายเยอะที่สุด , หนังสือที่ใกล้จะหมด
+  - ระบบจัดอันดับผู้ที่ซื้อหนังสือ จำนวนกี่เล่ม แบ่งเป็นหมวดหมู่ละกี่เล่ม ราคาเท่าไหร่
+  
+  Optional
+- each Book can have an image
+- มีการ validate ชนิดข้อมูลในแต่ละ API
+- ระบบรายงานสามารถระบุวันเวลาที่ต้องการได้ หรือ เลือกเป็นรายวัน / เดือน / ปี
 
 2.สร้างฟังชั่นเพื่อทำให้ test ในแต่ละข้อในไฟล์ ex1.test.ts, ex2.test.ts, ex3.test.ts, รันผ่าน (ไม่ให้ใช้ lib)
  
@@ -55,6 +39,4 @@
   ![Screen Shot 2565-01-30 at 17 09 20](https://user-images.githubusercontent.com/72042042/151695406-0550ab5d-2a88-4fb3-82b1-d6d127978de5.png)
 
 
-Optional
-- each todo can have an image
-- มีการ validate ชนิดข้อมูลในแต่ละ API
+
