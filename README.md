@@ -52,7 +52,7 @@
  
 linear programming
 
-![Screen Shot 2565-01-30 at 17 07 04](https://user-images.githubusercontent.com/72042042/151695331-15eaabc6-e2b9-43ae-8418-3a7d0015eb1a.png)
+![Screen Shot 2565-01-30 at 17 09 20](https://user-images.githubusercontent.com/72042042/151695406-0550ab5d-2a88-4fb3-82b1-d6d127978de5.png)
 
 
 Optional
