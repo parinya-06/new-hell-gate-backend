@@ -50,8 +50,9 @@
 
 2.สร้างฟังชั่นเพื่อทำให้ test ในแต่ละข้อในไฟล์ backend.spec.ts รันผ่าน
  
-linear programming 
-![Screen Shot 2565-01-30 at 17 04 33](https://user-images.githubusercontent.com/72042042/151695268-fe946b7b-aaf8-4f87-aff5-6868d61b292f.png)
+linear programming
+
+![Screen Shot 2565-01-30 at 17 07 04](https://user-images.githubusercontent.com/72042042/151695331-15eaabc6-e2b9-43ae-8418-3a7d0015eb1a.png)
 
 
 Optional
