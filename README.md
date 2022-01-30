@@ -4,6 +4,7 @@
 
 - NestJS Microservice
 - MongoDB
+- Redis
 
 \
 1.1 ออกแบบระบบร้านหนังสือ โดยมี service ดังนี้ 
