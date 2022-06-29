@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:ex1": "jest ex1.test.ts",
+    "test:ex2": "jest ex2.test.ts",
+    "test:ex3": "jest ex3.test.ts"
   },
   "devDependencies": {
     "@types/jest": "^27.4.0",
